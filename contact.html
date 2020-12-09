@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Aisyah's Personal Website</title>
+
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+
+<body>
+
+<header>
+  <div class="w3l-header" id="home">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0">
+        <a class="navbar-brand m-0"><span class="fa fa-gamepad"></span> Gamester </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-lg-4">
+              <a class="nav-link pl-0 pr-0" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-lg-4">
+              <a class="nav-link pl-0 pr-0" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item mr-lg-4">
+              <a class="nav-link pl-0 pr-0" href="services.html">Portfolio</a>
+              <li class="nav-item mr-lg-4">
+              <a class="nav-link pl-0 pr-0" href="experience.html">Experience</a>
+            </li>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link pl-0 pr-0" href="contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="w3l-contacts-12 py-5" id="contact">
+	<div class="container py-md-3">
+		<div class="contacts12-main">
+			<div class="title-section">
+				<h3 class="main-title-w3 mb-md-5 mb-4">Want to get in touch? <br>Find me on
+					<a href="tel:+60-139-227-160" class="editContent">phone</a>,
+					<a href="mailto:aisyahnabilah268@yahoo.co.uk" class="editContent">email</a>,
+					or <a href="https://twitter.com/sxronix" class="editContent">twitter</a>.</h3>
+			</div>
+			<form action="output.html" method="post" class="">
+				<div class="main-input">
+					<input type="text" name="aisyahName" placeholder="Enter your name" class="contact-input" required="" />
+					<input type="email" name="aisyahSender" placeholder="Enter your mail" class="contact-input" required="" />
+					<input type="email" name="aisyahSubject" placeholder="Subject" class="contact-input" />
+					<textarea class="contact-textarea contact-input" name="aisyahMessage" placeholder="Enter your message" required=""></textarea>
+				</div>
+				<div class="text-right">
+					<button class="btn-primary btn btn-style">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<footer>
+  <section class="w3l-footers-1">
+    <div class="footer py-3">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-lg-8 footer-left">
+              <p class="m-0">&copy; All Rights Reserved Aisyah 2020 </p>
+            </div>
+            <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+              <ul class="social m-0 p-0">
+                <li><a href="https://www.facebook.com/profile.php?id=100014977142645"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/yunxlescx/"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="https://twitter.com/sxronix"><span class="fa fa-twitter"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+<button onclick="topFunction()" id="movetop" class="editContent" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+<script>
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+
+
+<script src="assets/js/owl.carousel.js"></script>
+<script>
+  $(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      stagePadding: 20,
+      margin: 15,
+      nav: false,
+      loop: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  })
+</script>
+
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.js"></script>
+<script>
+  $('.counter').countUp();
+</script>
+
+<script src="assets/js/jquery-1.7.2.js"></script>
+<script src="assets/js/jquery.quicksand.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+
+<!--  bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--  //bootstrap js -->
+
+</body>
+
+</html>
